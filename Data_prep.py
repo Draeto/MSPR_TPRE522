@@ -33,7 +33,7 @@ def load_data_images(folder_path):
                 #lecture de l'image en niveau de gris 
                 img = io.imread(img_path, as_gray=True)
                 #resize de l'image !Problème d'echelle
-                resized_img = resize(img, (128, 128),anti_aliasing=True)  
+                resized_img = resize(img, (32, 32),anti_aliasing=True)  
                 #Application de la fonction HOG pour extraire les features
                 fd = hog(
                     resized_img,
